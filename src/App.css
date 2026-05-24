@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #0f172a;
+  color: #e2e8f0;
+  min-height: 100vh;
+}
+
+.app {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* HEADER */
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.header h1 {
+  font-size: 2rem;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.header h2 {
+  font-size: 1.2rem;
+  color: #94a3b8;
+  margin-top: 0.5rem;
+}
+
+/* FORM */
+.form {
+  background: #1e293b !important;
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 1rem !important;
+  padding: 1.5rem !important;
+  border-radius: 16px !important;
+  margin-bottom: 2rem !important;
+  border: 1px solid #334155 !important;
+}
+
+.form input,
+.form select {
+  background: #0f172a;
+  border: 1px solid #334155;
+  color: #e2e8f0;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  transition: border 0.2s;
+}
+
+.form input:focus,
+.form select:focus {
+  border-color: #6366f1;
+}
+
+.form button {
+  grid-column: span 2;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.form button:hover {
+  opacity: 0.9;
+}
+
+/* EXPENSE ITEM */
+.expense-item {
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+  transition: transform 0.2s;
+}
+
+.expense-item:hover {
+  transform: translateY(-2px);
+}
+
+.expense-item h3 {
+  font-size: 16px;
+  color: #e2e8f0;
+}
+
+.expense-item p {
+  font-size: 13px;
+  color: #94a3b8;
+  margin-top: 4px;
+}
+
+.expense-item .amount {
+  font-size: 18px;
+  font-weight: 600;
+  color: #6366f1;
+}
+
+.delete-btn {
+  background: #ef4444;
+  color: white;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  margin-left: 1rem;
+  transition: opacity 0.2s;
+}
+
+.delete-btn:hover {
+  opacity: 0.8;
+}
+
+/* CHART */
+.chart-container {
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 16px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+/* EMPTY */
+.empty {
+  text-align: center;
+  color: #94a3b8;
+  padding: 2rem;
+}
